@@ -1,0 +1,15 @@
+[submodule "sim_harness"]
+	path = sim_harness
+	url = git@github.com:ECE4574-5574/sim_harness.git
+[submodule "persistent_storage"]
+	path = persistent_storage
+	url = git@github.com:ECE4574-5574/persistent_storage.git
+[submodule "ServerAPI"]
+	path = ServerAPI
+	url = git@github.com:ECE4574-5574/ServerAPI.git
+[submodule "Decision_System"]
+	path = Decision_System
+	url = git@github.com:ECE4574-5574/Decision_System.git
+[submodule "Devices"]
+	path = Devices
+	url = git@github.com:ECE4574-5574/Devices.git
