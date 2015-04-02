@@ -1,0 +1,7 @@
+<WorkspaceItem ctype="Workspace">
+  <Items>
+    <Item>sim_harness/sim_harness.sln</Item>
+    <Item>ServerAPI/HomeAutomationServer.sln</Item>
+    <Item>Devices/Devices.sln</Item>
+  </Items>
+</WorkspaceItem>
