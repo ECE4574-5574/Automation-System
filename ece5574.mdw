@@ -3,5 +3,6 @@
     <Item>sim_harness/sim_harness.sln</Item>
     <Item>ServerAPI/HomeAutomationServer.sln</Item>
     <Item>Devices/Devices.sln</Item>
+    <Item>MobileApp/HomeAutomationApp.sln</Item>
   </Items>
 </WorkspaceItem>
