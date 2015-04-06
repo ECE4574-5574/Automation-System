@@ -13,3 +13,6 @@
 [submodule "Devices"]
 	path = Devices
 	url = git@github.com:ECE4574-5574/Devices.git
+[submodule "MobileApp"]
+	path = MobileApp
+	url = git@github.com:ECE4574-5574/MobileApp.git
