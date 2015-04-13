@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ece5574", "ece5574.csproj", "{74A9DE33-DD2C-4457-8668-2CCD562EE3F0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sim", "sim", "{2DC90D8F-A0F4-4AAA-BFF1-6AFAD1BCDCE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "time_frame", "sim_harness\time_frame\time_frame\time_frame.csproj", "{E9C8A0A8-16D9-4FEF-AB45-04E9EE9A579E}"
@@ -43,10 +41,6 @@ Global
 		{7334E120-5CFB-43E3-9DD3-B86A6910CCCA}.Debug|x86.Build.0 = Debug|Any CPU
 		{7334E120-5CFB-43E3-9DD3-B86A6910CCCA}.Release|x86.ActiveCfg = Release|Any CPU
 		{7334E120-5CFB-43E3-9DD3-B86A6910CCCA}.Release|x86.Build.0 = Release|Any CPU
-		{74A9DE33-DD2C-4457-8668-2CCD562EE3F0}.Debug|x86.ActiveCfg = Debug|x86
-		{74A9DE33-DD2C-4457-8668-2CCD562EE3F0}.Debug|x86.Build.0 = Debug|x86
-		{74A9DE33-DD2C-4457-8668-2CCD562EE3F0}.Release|x86.ActiveCfg = Release|x86
-		{74A9DE33-DD2C-4457-8668-2CCD562EE3F0}.Release|x86.Build.0 = Release|x86
 		{99C6E3E4-0AE3-4507-8416-38B32DAC9E56}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{99C6E3E4-0AE3-4507-8416-38B32DAC9E56}.Debug|x86.Build.0 = Debug|Any CPU
 		{99C6E3E4-0AE3-4507-8416-38B32DAC9E56}.Release|x86.ActiveCfg = Release|Any CPU
