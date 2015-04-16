@@ -11,5 +11,5 @@ install:
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild
-  - MONO_PATH=./sim_harness/time_frame/time_frame/obj/Debug/:./sim_harness/sim_weather/obj/Debug/ mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./sim_harness/sim_tests/bin/Debug/sim_tests.dll
-  - MONO_PATH=./sim_harness/time_frame/time_frame/obj/Debug/:./sim_harness/sim_weather/obj/Debug/:./Devices/api/obj/Debug mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Devices/api_tests/bin/Debug/api_tests.dll
+  - ./scripts/run_test.sh ./sim_harness/sim_tests/bin/Debug/sim_tests.dll
+  - ./scripts/run_test.sh ./Devices/api_tests/bin/Debug/api_tests.dll
