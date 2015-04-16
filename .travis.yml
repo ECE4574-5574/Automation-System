@@ -1,0 +1,15 @@
+language: csharp
+solution: ece5574.sln
+git:
+    submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+install:
+  - nuget restore ece5574.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild
+  - MONO_PATH=./sim_harness/time_frame/time_frame/obj/Debug/:./sim_harness/sim_weather/obj/Debug/ mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./sim_harness/sim_tests/bin/Debug/sim_tests.dll
+  - MONO_PATH=./sim_harness/time_frame/time_frame/obj/Debug/:./sim_harness/sim_weather/obj/Debug/:./Devices/api/obj/Debug mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./Devices/api_tests/bin/Debug/api_tests.dll
