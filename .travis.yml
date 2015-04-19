@@ -10,6 +10,12 @@ install:
   - nuget restore ece5574.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild
+  - xbuild /target:api_tests
+  - xbuild /target:sim_tests
+  - xbuild /target:HomeAutomationAppTests
+  - xbuild /target:House
+  - xbuild /target:HomeAutomationServer
+  - xbuild /target:Sim_Harness_GUI
   - ./scripts/run_test.sh ./sim_harness/sim_tests/bin/Debug/sim_tests.dll
   - ./scripts/run_test.sh ./Devices/api_tests/bin/Debug/api_tests.dll
+  - ./scripts/run_test.sh ./MobileApp/LogicUnitTests/bin/Debug/LogicUnitTests.dll
