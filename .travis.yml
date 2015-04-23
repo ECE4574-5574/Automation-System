@@ -16,5 +16,7 @@ script:
   - xbuild /target:House
   - xbuild /target:HomeAutomationServer
   - xbuild /target:Sim_Harness_GUI
+  - xbuild /target:HouseTest
   - ./scripts/run_test.sh ./sim_harness/sim_tests/bin/Debug/sim_tests.dll
   - ./scripts/run_test.sh ./Devices/api_tests/bin/Debug/api_tests.dll
+  - HOUSE_PATH=./Devices/House/bin/Debug/House.exe ./scripts/run_test.sh ./Devices/HouseTest/bin/Debug/HouseTest.dll
